@@ -30,10 +30,11 @@
 如果遇到该情况，主动disconnect再connect可以规避此类问题（请参考producer.js）。
 本Demo代码，仅作为Demo使用，实际生产时请参考该Demo进行调试。
 
-
-
-
-
-
-
-
+### Centos依赖
+```bash
+# lz4 sasl ssl
+yum install epel-release
+yum install lz4-devel
+yum install cyrus-sasl-devel
+yum install openssl-devel 
+```
